@@ -11,11 +11,21 @@
 
 #include <stdio.h>
 #include "Arrete.hpp"
+#include <set>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <iostream>
 
 class Graphe
 {
 private:
+    std::set<int,Noeud*> noeudVector;
+    std::vector<Arrete*> arreteVector;
     
+public:
+    Graphe(std::string);
+    void LireTXT(std::string);
 };
 
 #endif /* Graphe_hpp */
