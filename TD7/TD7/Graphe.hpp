@@ -16,16 +16,22 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <sstream>
+#include "outils.h"
+
+std::vector<std::string> split(std::string , char );
 
 class Graphe
 {
 private:
-    std::set<int,Noeud*> noeudVector;
+    std::vector<Noeud*> noeudVector;
     std::vector<Arrete*> arreteVector;
     
 public:
     Graphe(std::string);
     void LireTXT(std::string);
+    Noeud* ajouterNoeud(int);
+    void ajouterArrete(int,int,int);
 };
 
 #endif /* Graphe_hpp */

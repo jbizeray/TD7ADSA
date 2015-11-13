@@ -13,7 +13,7 @@ long string2integer(std::string const & s);
 
 bool is_real(std::string const & s);
 std::string real2string(double d);
-double string2real(std::string const & s);
+int string2real(std::string const & s);
 
 
 
